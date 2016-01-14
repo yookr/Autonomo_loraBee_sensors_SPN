@@ -218,10 +218,10 @@ void loop()
 
     // original: switch (LoRaBee.sendReqAck(1, testPayload, 8, 3))
     // parameters:
-    //      1 1            ?? geen idee wat deze betekent
+    //      1 1            Application specific port
     //      2 testPayload  De payload in Hex die verzonden wordt
     //      3 8            Lengte van de payload
-    //      4 3            ?? geen idee wat deze betekent
+    //      4 3            Number of retries for the Acknowledgement
     switch (LoRaBee.sendReqAck(1, payload, payloadLength, 3))
     {
     case NoError:
